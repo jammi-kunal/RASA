@@ -1,0 +1,26 @@
+version: "3.1"
+
+nlu:
+  - lookup: product
+    examples: |
+      - Shirt
+      - Mobile
+      - Television
+      - AC
+      - Fridge
+      - Earphones
+
+  - synonym: AC
+    examples: |
+      - Air Conditioner
+
+  - synonym: Fridge
+    examples: |
+      - Refridgerator
+      - Cold Storage
+  
+  - synonym: Mobile
+    examples: |
+      - Cellphone
+      - Phone
+      - Mobile Phone

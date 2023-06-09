@@ -1,0 +1,61 @@
+version: "3.1"
+
+intents:
+  - greet
+  - goodbye
+  - affirm
+  - deny
+  - purchase_product
+  - search_product
+  - shipping_faq
+  - bot_challenge
+
+entities:
+  - phone-number
+  - email
+  - product-name
+  - amount-of-money
+
+slots:
+  amount:
+    type: text
+    influence_conversation: false
+    mappings:
+      type: from_entity
+      entity: amount-of-money
+  name:
+    type: text
+    influence_conversation: false
+    mappings:
+      - type: from_text
+  product_name:
+    type: text
+    influence_conversation: false
+    mappings:
+      - type: from_text
+  phone:
+    type: text
+    influence_conversation: false
+    mappings:
+      - type: from_entity
+      - entity: phone-number
+  email:
+    type: text
+    influence_conversation: false
+    mappings: 
+      - type: from_entity
+      - entity: email
+
+responses:
+  utter_greet:
+  - text: "Hey! How are you?"
+
+  utter_goodbye:
+  - text: "Bye"
+
+  utter_iamabot:
+  - text: "I am a bot, powered by Rasa."
+
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true

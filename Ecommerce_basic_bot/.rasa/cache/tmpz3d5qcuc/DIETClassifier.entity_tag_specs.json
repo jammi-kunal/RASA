@@ -1,0 +1,44 @@
+[
+  {
+    "tag_name": "entity",
+    "ids_to_tags": {
+      "1": "B-amount-of-money",
+      "2": "I-amount-of-money",
+      "3": "L-amount-of-money",
+      "4": "U-amount-of-money",
+      "5": "B-email",
+      "6": "I-email",
+      "7": "L-email",
+      "8": "U-email",
+      "9": "B-phone-number",
+      "10": "I-phone-number",
+      "11": "L-phone-number",
+      "12": "U-phone-number",
+      "13": "B-product-name",
+      "14": "I-product-name",
+      "15": "L-product-name",
+      "16": "U-product-name",
+      "0": "O"
+    },
+    "tags_to_ids": {
+      "B-amount-of-money": 1,
+      "I-amount-of-money": 2,
+      "L-amount-of-money": 3,
+      "U-amount-of-money": 4,
+      "B-email": 5,
+      "I-email": 6,
+      "L-email": 7,
+      "U-email": 8,
+      "B-phone-number": 9,
+      "I-phone-number": 10,
+      "L-phone-number": 11,
+      "U-phone-number": 12,
+      "B-product-name": 13,
+      "I-product-name": 14,
+      "L-product-name": 15,
+      "U-product-name": 16,
+      "O": 0
+    },
+    "num_tags": 17
+  }
+]

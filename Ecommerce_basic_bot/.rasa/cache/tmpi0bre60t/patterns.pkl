@@ -1,0 +1,6 @@
+[
+  {
+    "name": "product",
+    "pattern": "(\\bShirt\\b|\\bMobile\\b|\\bTelevision\\b|\\bAC\\b|\\bFridge\\b|\\bEarphones\\b)"
+  }
+]
